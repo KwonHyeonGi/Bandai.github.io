@@ -1,0 +1,100 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>BANDAI NAMCO</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="BANDAI NAMCO2.png" width="300" >
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">소개</a></li>
+				<li><a href="#movie" data-rel="dialog">반다이 남코 Youtube</a></li>
+				<li><a href="#gallery">내가 좋아하는 사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>독도사랑_홍길동</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="b">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>회사 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+					<img src="BANDAI NAMCO.png" width="300">
+				</div>			
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>반다이 남코 설립</h3>
+					<p>1955년 06월 01일</p>
+					<p>꿈, 창조 행복한 시간을 만드는 기업</p>
+					<P>Dreams, Fun and Inspiration 놀라운 감동을 드립니다. 진정한 글로벌 기업으로서 전 세계 사용자에게 꿈과 감동을 전합니다. 
+					현재를 살아가는 힘과 미래를 내다보는 의지를 우리에게 제공하는 것은 꿈과 감동입니다. 
+					꿈과 감동은 마음 깊숙한 곳에서 삶의 버팀목이 되고 우리를 격려하며 이끄는 더없이 소중한 존재입니다. 
+					저희 반다이남코코리아는 「꿈·놀이·감동」을 전달하는 기업으로서, 「Fun For the Future! 즐기면서, 즐거운 미래에.」를 표어로 항상 모든 사람들에게 꿈과 감동을 지속적으로 제공하기 위해 노력합니다.</P>
+				</div>
+				<div data-role="collapsible">
+					<h3>반다이 남코 인기 게임</h3>
+					<p>팩맨(1980), 갤러그(1981), 철권(1994), 소울 엣지(1996) 기타 등등</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>권현기</h1>
+		</div>		
+	</div>
+	
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>반다이남코 최근 영상</h1>
+			<p><A href = "URL" taget = "https://www.youtube.com/@user-ey4fe7uz3g/featured"></A>유튜브 링크</p>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-a">'철권 8' 제 1차 트레일러</div><br/>
+			<li><iframe width="100%" height="240" src="https://youtu.be/_aOKQDlyNTo"></iframe></li><br/>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>게임 갤러리</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="pacman.png" rel="external"><img src="pacman.png" /></a></li>	
+				<li><a href="takken.jfif" rel="external"><img src="takken.jfif" /></a></li>	
+				<li><a href="darksoul.jpg" rel="external"><img src="darksoul.jpg" /></a></li>	
+				<li><a href="sekiro.jfif" rel="external"><img src="sekiro.jfif" /></a></li>	            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>권현기</h1>
+		</div>		
+	</div>
+</div>	
+</body>
+</html>
